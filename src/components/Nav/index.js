@@ -12,7 +12,6 @@ function Nav() {
           description:
             "portfolio of projects",
         },
-        { name: "Contact", description: "Contact Brian" },
         { name: "Resume", description: "Brian Resume" },
         
       ];
@@ -30,6 +29,9 @@ function Nav() {
         <a href="#about">
           About Brian
         </a>
+      </li>
+      <li>
+        <span>Contact</span>
       </li>
       {categories.map((category) => (
   <li

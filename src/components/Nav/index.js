@@ -1,52 +1,31 @@
-import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import React from 'react';
+import brianImage from "../../assets/images/brian-small.png";
 
 function Nav(props) {
-
-
   const {
-    categories = [],
-    setCurrentCategory,
-    currentCategory,
+    handlePageChange
   } = props;
 
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
-
   return (
-    <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> 📸</span> Brian Done Portfolio
-        </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a data-testid="about" href="#about">
-              About Brian
-            </a>
+    <header>
+      <nav className="flex-row">
+        <h1 className="flex-row vcenter">
+          <img id="my-header-pic" src={brianImage} alt="Brian Done" title="Brian Done" />
+            Brian Done
+        </h1>
+        <ul className="flex-row center-content">
+          <li className={`mx-2`}>
+            <button id="navAbout" onClick={() => handlePageChange('About')}>About Brian</button>
           </li>
-          <li className="mx-2">
-            <span>Contact</span>
+          <li className={`mx-2`}>
+            <button id="navContact" onClick={() => handlePageChange('Contact')}>Contact</button>
           </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && 'navActive'
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category)
-                }}
-              >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))}
+          <li className={`mx-2`}>
+            <button id="navProjects" onClick={() => handlePageChange('Projects')}>Portfolio</button>
+          </li>
+          <li className={`mx-2`}>
+          <button id="navResume" onClick={() => handlePageChange('Resume')}>Resume</button>
+          </li>
         </ul>
       </nav>
     </header>

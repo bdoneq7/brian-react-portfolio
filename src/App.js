@@ -1,44 +1,43 @@
-import React, { useState } from 'react';
-import Nav from './components/Nav';
-import About from './components/About';
-import Gallery from './components/Gallery';
-import ContactForm from './components/Contact';
+import "./index.css";
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
-  const [categories] = useState([
-    {
-      name: 'commercial',
-      description: 'List of Projects',
-    },
-    { name: 'resume', description: 'Skills, Experience, and Education' },
-    
-  ]);
+	const [currentTab, setCurrentTab] = useState("about");
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+	const renderTab = () => {
+		switch (currentTab) {
+			case "about":
+				return <About />;
+			case "portfolio":
+				return <Portfolio />;
+			case "contact":
+				return <Contact />;
+			case "resume":
+				return <Resume />;
+			default:
+				return null;
+		}
+	};
 
-  const [contactSelected, setContactSelected] = useState(false);
-
-  return (
-    <div>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
-        {!contactSelected ? (
-          <>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-      </main>
-    </div>
-  );
+	return (
+		<div>
+			<div className="mobile-header">
+				<Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
+			</div>
+			<div>
+				<main>{renderTab()}</main>
+			</div>
+			<div>
+				<Footer></Footer>
+			</div>
+		</div>
+	);
 }
 
 export default App;

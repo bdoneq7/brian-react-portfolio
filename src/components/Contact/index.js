@@ -1,25 +1,24 @@
 import React, { useState } from 'react';
-
 import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
-      console.log('Submit Form', formState);
-    }
+      setFormState({ [e.target.name]: e.target.value });
+      console.log(formState);
+    } 
   };
 
   const handleChange = (e) => {
     if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
-        setErrorMessage('Your email is invalid.');
+        setErrorMessage('The email you have entered is invalid.');
       } else {
         setErrorMessage('');
       }
@@ -30,16 +29,12 @@ function ContactForm() {
         setErrorMessage('');
       }
     }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
   };
 
   return (
     <section>
-      <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <h1 className="mx-2" data-testid="h1tag">Contact Brian</h1>
+      <form className="mx-2" id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
@@ -57,7 +52,7 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button data-testid="button" type="submit">Send to Brian</button>
       </form>
     </section>
   );

@@ -36,16 +36,21 @@ function ContactForm() {
       <h1 className="mx-2" data-testid="h1tag">Contact Brian</h1>
       <form className="mx-2" id="contact-form" onSubmit={handleSubmit}>
         <div>
+          <br/>
           <label htmlFor="name">Name:</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
         <div>
+          <br/>
           <label htmlFor="email">Email address:</label>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
         <div>
+          <br/>
           <label htmlFor="message">Message:</label>
           <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <br/>
+          <br/>
         </div>
         {errorMessage && (
           <div>

@@ -8,13 +8,13 @@ function About(props) {
       <img src={brian} className="my-2" style={{ width: "20%", height: "20%" }} alt="brian" title="brian" />
       <div className="my-2 mx-2">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-          condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-          mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
-          Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
-          justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
-          dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
-          Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+        I am a Full Stack Web Developer that loves to be cre8tive.<br/>
+        <br/>
+        My skills include JavaScript, Jquery, Bootstrap, Bulma, Ajax, Node, Express, MySQL, Sequelize, and Handlebars.<br/>
+        <br/>
+        I have been passionate about coding ever since I was a kid, teaching myself how to code when there was only dial up internet! Since then I have been on a life long journey of learning and improving my technical coding skills. I love to create websites around my hobbies including astronomy, gaming, roleplaying, photography, and more. I am always trying to perfect my projects and pay attention to detail.<br/>
+        <br/>
+        I am great at working in a team environment, thinking outside the box, and constantly looking to the future evolution of technology. My desire is to help bring about the evolution of the Internet to the next level. I am fascinated with the concept of how the future of the Internet will evolve and morph. I am focused on making professional next generation websites and applications that add value to the web industry. I am committed to constantly learning and perfecting my coding craft to bring these ideals to reality!
         </p>
       </div>
     </section>

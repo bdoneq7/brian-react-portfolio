@@ -53,6 +53,12 @@ header a {
   text-decoration: none;
 }
 
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
 
 main {
 	margin: 0 auto;

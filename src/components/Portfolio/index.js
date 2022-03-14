@@ -1,116 +1,91 @@
-import React from 'react';
-import Project from '../Project';
+import React from "react";
+import gitLogo from "../../assets/images/github-logo.png"
+import image_1 from "../../assets/images/whatsoutthere.PNG";
+import image_2 from "../../assets/images/what2watch.PNG";
+import image_3 from "../../assets/images/runbuddy.jpg";
+import image_4 from "../../assets/images/passwordgen.PNG";
+import image_5 from "../../assets/images/codequiz.PNG";
 
-function Portfolio() {
-	const projects = [
-		{
-			name: 'Whats Out There?',
-			description:
-				'UFO Sightings Database.',
-			image: 'whatsoutthere.png',
-			technologies: [
-				'Node.js',
-				'Express',
-                'MySQL & Sequelize',
-				'Handlebars',
-				'Bulma',
-			],
-			github: 'https://github.com/',
-			deployed: 'herokuapp.com/',
-		},
-		{
-			name: 'What 2 Watch',
-			description:
-				'Movie Database.',
-			image: 'whattowatch.png',
-			technologies: [
-				'HTML/CSS',
-			],
-			github: 'https://github.com',
-			deployed: 'https://github.com',
-		},
-		{
-			name: 'Run Buddy',
-			description:
-				'Run Buddy',
-			image: 'runbuddy.png',
-			technologies: ['HTML/CSS', 'JavaScript'],
-			github: 'https://github.com/',
-			deployed: 'https://github.com',
-		},
-		{
-			name: 'Password Generator',
-			description:
-				'Password Generator',
-			image: 'passwordgenerator.png',
-			technologies: [
-				'JavaScript',
-			],
-			github: 'https://github.com/',
-			deployed: 'https://github.com',
-		},
-		{
-			name: 'Code Quiz',
-			description:
-				'Code Quiz',
-			image: 'codequiz.png',
-			technologies: ['HTML/CSS', 'JavaScript'],
-			github: 'https://github.com/',
-			deployed: 'https://github.com',
-		},
-		{
-			name: 'Workday Scheduler',
-			description:
-				'Workday Scheduler',
-			image: 'workdayscheduler.png',
-			technologies: ['HTML/CSS', 'JavaScript'],
-			github: 'https://github.com/',
-			deployed: 'https://github.com',
-		},
-		{
-			name: 'Weather Dashboard',
-			description:
-				'Weather Dashboard',
-			image: 'weatherdashboard.png',
-			technologies: ['HTML/CSS', 'JavaScript'],
-			github: 'https://github.com/',
-			deployed: 'https://github.com',
-		},
-	];
+function Project(props) {
+  const projectList = [
+    {
+      name: "What's Out There!",
+      type: "Node, Express",
+      description: "UFO sightings Database",
+      image: image_1,
+      appLink: "https:herokuapp.com/",
+      gitLogo: gitLogo,
+      gitRepo: "https://github.com/",
+      accessibility: "UFO sightings Database"
+    },
+    {
+      name: "What 2 Watch",
+      type: "HTML/CSS/JavaScript/Ajax",
+      description: "Run Buddy",
+      image: image_2,
+      appLink: "https://msdale.github.io/run-buddy/",
+      gitLogo: gitLogo,
+      gitRepo: "https://github.com/",
+      accessibility: "Run Buddy"
+    },
+    {
+      name: "Password Generator",
+      type: "HTML/CSS/JavaScript",
+      description: "Password Generator",
+      image: image_3,
+      appLink: "https://github.com/",
+      gitLogo: gitLogo,
+      gitRepo: "https://github.com/",
+      accessibility: "Password Generator"
+    },
+    {
+      name: "Code Quiz",
+      type: "HTML/CSS/JavaScript",
+      description: "Code Quiz",
+      image: image_4,
+      appLink: "https://github.com/",
+      gitLogo: gitLogo,
+      gitRepo: "https://github.com/",
+      accessibility: "Code Quiz"
+    },
+    {
+      name: "Workday Scheduler",
+      type: "HTML/CSS/JavaScript",
+      description: "Workday Scheduler",
+      image: image_5,
+      appLink: "https://github.com/",
+      gitLogo: gitLogo,
+      gitRepo: "https://github.com/",
+      accessibility: "Workday Scheduler"
+    },
+    
+  ];
 
-	return (
-		<section>
-			<div className="center">
-				<h1 className="page-header">Brian Done Portfolio</h1>
-			</div>
-			<div>
-				<ul className="flex-row mobile-row">
-					<li className="padding">
-						<Project projects={projects[0]}></Project>
-					</li>
-					<li className="padding">
-						<Project projects={projects[1]}></Project>
-					</li>
-				</ul>
-				<ul className="flex-row mobile-row">
-					<li className="padding">
-						<Project projects={projects[2]}></Project>
-					</li>
-					<li className="padding">
-						<Project projects={projects[3]}></Project>
-					</li>
-				</ul>
-				<ul className="flex-row mobile-row">
-					<li className="padding">
-						<Project projects={projects[4]}></Project>
-					</li>
-					<li className="padding">
-						<Project projects={projects[5]}></Project>
-					</li>
-				</ul>
-			</div>
-		</section>
-	);
+  return (
+    <div className="flex-row">
+      {projectList.map((project) => (
+        <section>
+          <p>&nbsp;{project.type}&nbsp;
+            <a href={project.gitRepo} target="_blank" rel="noreferrer" alt="git Icon">
+              <img
+                className="my-project-link"
+                src={project.gitLogo}
+                alt="git logo"
+              />
+            </a>
+          </p>
+          <div>
+            <a href={project.appLink} target="_blank" rel="noreferrer" alt="app image">
+              <img
+                src={project.image}
+                alt={project.accessibility}
+                className="img-thumbnail mx-1 my-project-link"
+              />
+            </a>
+          </div>
+        </section>
+      ))}
+    </div>
+  );
 }
-
-export default Portfolio;
+export default Project;

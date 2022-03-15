@@ -359,12 +359,9 @@ a {
 
 .project-title {
   font-size: 30px;
+  color: var(--yellow-color)
 }
 
 .proficient-title {
   color: var(--yellow-color)
-}
-
-.download {
-  color: var(--blue-color)
 }

@@ -2,61 +2,61 @@ import React from "react";
 import gitLogo from "../../assets/images/github-logo.png"
 import image_1 from "../../assets/images/whatsoutthere.jpg";
 import image_2 from "../../assets/images/what2watch.jpg";
-import image_3 from "../../assets/images/runbuddy.jpg";
-import image_4 from "../../assets/images/passwordgen.PNG";
-import image_5 from "../../assets/images/codequiz.PNG";
+import image_3 from "../../assets/images/passwordgen.PNG";
+import image_4 from "../../assets/images/codequiz.PNG";
+import image_5 from "../../assets/images/scheduler.PNG";
 
 function Project(props) {
   const projectList = [
     {
       name: "What's Out There?",
-      type: "Node, Express",
-      description: "UFO sightings Database",
+      type: "Node, Express, MySQL, Sequelize, Handlebars, Bulma",
+      description: "Documents UFO/UAP Sightings and events in a searchable database.",
       image: image_1,
-      appLink: "https:herokuapp.com/",
+      appLink: "https://bdoneq7-whats-out-there.herokuapp.com",
       gitLogo: gitLogo,
-      gitRepo: "https://github.com/",
+      gitRepo: "https://github.com/msdale/whats-out-there/tree/main",
       accessibility: "UFO sightings Database"
     },
     {
       name: "What 2 Watch",
-      type: "HTML/CSS/JavaScript/Ajax",
-      description: "Run Buddy",
+      type: "Bulma/JavaScript/Ajax",
+      description: "For when you need to Find the Right Movie",
       image: image_2,
-      appLink: "https://msdale.github.io/run-buddy/",
+      appLink: "https://dapr1nc3.github.io/what-to-watch/",
       gitLogo: gitLogo,
-      gitRepo: "https://github.com/",
-      accessibility: "Run Buddy"
+      gitRepo: "https://github.com/bdoneq7/what-to-watch",
+      accessibility: "What 2 Watch"
     },
     {
-      name: "Password Generator",
+      name: "Secure Password Generator",
       type: "HTML/CSS/JavaScript",
-      description: "Password Generator",
+      description: "Allows a User to generate a Secure Password Generator",
       image: image_3,
-      appLink: "https://github.com/",
+      appLink: "https://bdoneq7.github.io/password-generator/",
       gitLogo: gitLogo,
-      gitRepo: "https://github.com/",
-      accessibility: "Password Generator"
+      gitRepo: "https://github.com/bdoneq7/password-generator/tree/main",
+      accessibility: "Secure Password Generator"
     },
     {
       name: "Code Quiz",
       type: "HTML/CSS/JavaScript",
       description: "Code Quiz",
       image: image_4,
-      appLink: "https://github.com/",
+      appLink: "https://bdoneq7.github.io/code-quiz/",
       gitLogo: gitLogo,
-      gitRepo: "https://github.com/",
+      gitRepo: "https://github.com/bdoneq7/code-quiz/tree/main",
       accessibility: "Code Quiz"
     },
     {
-      name: "Workday Scheduler",
-      type: "HTML/CSS/JavaScript",
-      description: "Workday Scheduler",
+      name: "Work Day Scheduler",
+      type: "Boostrap/JavaScript/jQuery",
+      description: "A simple calendar app for scheduling your work day",
       image: image_5,
-      appLink: "https://github.com/",
+      appLink: "https://bdoneq7.github.io/work-day-scheduler/",
       gitLogo: gitLogo,
-      gitRepo: "https://github.com/",
-      accessibility: "Workday Scheduler"
+      gitRepo: "https://github.com/bdoneq7/work-day-scheduler/tree/main",
+      accessibility: "Work Day Scheduler"
     },
     
   ];

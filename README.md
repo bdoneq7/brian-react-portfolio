@@ -29,7 +29,8 @@ The page will reload when you make changes.\
 
 ## Deployment 
 
-Link
+https://bdoneq7.github.io/brian-react-portfolio/
+
 ## License 
 Using the MIT License.
 

@@ -6,7 +6,6 @@ To build a react portfolio that potential employers can use to review work sampl
 ## Built With
 * JavaScript
 * React
-* Express.js
 
 ## Table of Contents
 * [Screenshot](#screenshot)

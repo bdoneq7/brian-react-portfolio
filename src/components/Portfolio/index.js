@@ -1,7 +1,7 @@
 import React from "react";
 import gitLogo from "../../assets/images/github-logo.png"
-import image_1 from "../../assets/images/whatsoutthere.PNG";
-import image_2 from "../../assets/images/what2watch.PNG";
+import image_1 from "../../assets/images/whatsoutthere.jpg";
+import image_2 from "../../assets/images/what2watch.jpg";
 import image_3 from "../../assets/images/runbuddy.jpg";
 import image_4 from "../../assets/images/passwordgen.PNG";
 import image_5 from "../../assets/images/codequiz.PNG";
@@ -9,7 +9,7 @@ import image_5 from "../../assets/images/codequiz.PNG";
 function Project(props) {
   const projectList = [
     {
-      name: "What's Out There!",
+      name: "What's Out There?",
       type: "Node, Express",
       description: "UFO sightings Database",
       image: image_1,
@@ -65,16 +65,15 @@ function Project(props) {
     <div className="flex-row">
       {projectList.map((project) => (
         <section>
-          <p>&nbsp;{project.type}&nbsp;
-            <a href={project.gitRepo} target="_blank" rel="noreferrer" alt="git Icon">
-              <img
-                className="my-project-link"
-                src={project.gitLogo}
-                alt="git logo"
-              />
+          
+          <div>
+          <p>&nbsp;<span class="project-title">{project.name}</span><br/><br/>
+          &nbsp;Description: {project.description}<br/><br/>
+          &nbsp;Built with {project.type}<br/>
+          &nbsp;<a href={project.gitRepo} target="_blank" rel="noreferrer" alt="git Icon">Github Repo Link
             </a>
           </p>
-          <div>
+          <br/>
             <a href={project.appLink} target="_blank" rel="noreferrer" alt="app image">
               <img
                 src={project.image}

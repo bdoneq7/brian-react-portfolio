@@ -153,9 +153,6 @@ a:hover {
   text-decoration: underline;
 }
 
-header {
-  background: var(--dark);
-}
 
 header a {
   color: var(--light);
@@ -210,6 +207,10 @@ input:focus {
 
 li {
   list-style: none;
+}
+
+nav {
+  background-color: var(--darkestpurple-color);
 }
 
 nav a:hover {
@@ -353,5 +354,17 @@ a {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: var(--yellow-color);
+}
+
+.project-title {
+  font-size: 30px;
+}
+
+.proficient-title {
+  color: var(--yellow-color)
+}
+
+.download {
+  color: var(--blue-color)
 }

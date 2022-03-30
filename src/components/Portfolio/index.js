@@ -1,5 +1,5 @@
 import React from "react";
-import gitLogo from "../../assets/images/github-logo.png"
+import gitLogo from "../../assets/images/food4thought.PNG"
 import image_0 from "../../assets/images/holder.jpg";
 import image_1 from "../../assets/images/whatsoutthere.jpg";
 import image_2 from "../../assets/images/what2watch.jpg";
@@ -14,7 +14,7 @@ function Project(props) {
       type: "Node, Express, MongoDB, GraphQL, React, Bootstrap",
       description: "Search for Recipes",
       image: image_0,
-      appLink: "herokuapp.com",
+      appLink: "https://immense-shelf-25976.herokuapp.com",
       gitLogo: gitLogo,
       gitRepo: "https://github.com/Dapr1nc3/Food-App",
       accessibility: "Recipe App"

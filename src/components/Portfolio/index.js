@@ -1,5 +1,6 @@
 import React from "react";
 import gitLogo from "../../assets/images/github-logo.png"
+import image_0 from "../../assets/images/holder.jpg";
 import image_1 from "../../assets/images/whatsoutthere.jpg";
 import image_2 from "../../assets/images/what2watch.jpg";
 import image_3 from "../../assets/images/passwordgen.PNG";
@@ -8,6 +9,16 @@ import image_5 from "../../assets/images/scheduler.PNG";
 
 function Project(props) {
   const projectList = [
+    {
+      name: "Food4Thought",
+      type: "Node, Express, MongoDB, GraphQL, React, Bootstrap",
+      description: "Search for Recipes",
+      image: image_0,
+      appLink: "herokuapp.com",
+      gitLogo: gitLogo,
+      gitRepo: "https://github.com/Dapr1nc3/Food-App",
+      accessibility: "Recipe App"
+    },
     {
       name: "What's Out There?",
       type: "Node, Express, MySQL, Sequelize, Handlebars, Bulma",

@@ -1,6 +1,6 @@
 import React from "react";
 import gitLogo from "../../assets/images/food4thought.PNG"
-import image_0 from "../../assets/images/holder.jpg";
+import image_0 from "../../assets/images/food4thought.PNG";
 import image_1 from "../../assets/images/whatsoutthere.jpg";
 import image_2 from "../../assets/images/what2watch.jpg";
 import image_3 from "../../assets/images/passwordgen.PNG";

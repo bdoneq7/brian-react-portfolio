@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/brian-react-portfolio/static/css/main.ef51df18.css",
-    "main.js": "/brian-react-portfolio/static/js/main.2c50c431.js",
+    "main.js": "/brian-react-portfolio/static/js/main.d3ab539f.js",
     "static/js/787.1015061e.chunk.js": "/brian-react-portfolio/static/js/787.1015061e.chunk.js",
     "static/media/food4thought.PNG": "/brian-react-portfolio/static/media/food4thought.a9c8b00472d8419be3b1.PNG",
+    "static/media/food4thought.jpg": "/brian-react-portfolio/static/media/food4thought.d35de8d74e055c000330.jpg",
     "static/media/whatsoutthere.jpg": "/brian-react-portfolio/static/media/whatsoutthere.ea6e7087c1e57be44c9d.jpg",
     "static/media/brian.png": "/brian-react-portfolio/static/media/brian.bca42cf9a9983bc7c9e8.png",
     "static/media/what2watch.jpg": "/brian-react-portfolio/static/media/what2watch.b49775ae146f7a2c3d94.jpg",
@@ -13,11 +14,11 @@
     "static/media/passwordgen.PNG": "/brian-react-portfolio/static/media/passwordgen.9d407188d15c01ebc1ee.PNG",
     "index.html": "/brian-react-portfolio/index.html",
     "main.ef51df18.css.map": "/brian-react-portfolio/static/css/main.ef51df18.css.map",
-    "main.2c50c431.js.map": "/brian-react-portfolio/static/js/main.2c50c431.js.map",
+    "main.d3ab539f.js.map": "/brian-react-portfolio/static/js/main.d3ab539f.js.map",
     "787.1015061e.chunk.js.map": "/brian-react-portfolio/static/js/787.1015061e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef51df18.css",
-    "static/js/main.2c50c431.js"
+    "static/js/main.d3ab539f.js"
   ]
 }

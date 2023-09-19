@@ -1,7 +1,7 @@
-# Brian-React-Portfolio
+# Brian Portfolio
 
 ## Purpose 
-To build a react portfolio that potential employers can use to review work samples and download a resume.
+To build a portfolio that potential employers can use to review my work samples and download my resume.
 
 ## Built With
 * JavaScript

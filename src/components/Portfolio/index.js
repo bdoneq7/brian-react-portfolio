@@ -3,8 +3,7 @@ import gitLogo from "../../assets/images/food4thought.PNG"
 import image_0 from "../../assets/images/food4thought.jpg";
 import image_1 from "../../assets/images/whatsoutthere.jpg";
 import image_2 from "../../assets/images/what2watch.jpg";
-import image_4 from "../../assets/images/codequiz.PNG";
-import image_5 from "../../assets/images/scheduler.PNG";
+
 
 function Project(props) {
   const projectList = [
@@ -42,7 +41,7 @@ function Project(props) {
       name: "Secure Password Generator",
       type: "HTML/CSS/JavaScript",
       description: "Allows a User to generate a Secure Password Generator",
-      image: image_3,
+      image: image_2,
       appLink: "https://bdoneq7.github.io/password-generator/",
       gitLogo: gitLogo,
       gitRepo: "https://github.com/bdoneq7/password-generator/tree/main",
@@ -52,7 +51,7 @@ function Project(props) {
       name: "Code Quiz",
       type: "HTML/CSS/JavaScript",
       description: "Code Quiz",
-      image: image_4,
+      image: image_2,
       appLink: "https://bdoneq7.github.io/code-quiz/",
       gitLogo: gitLogo,
       gitRepo: "https://github.com/bdoneq7/code-quiz/tree/main",
@@ -62,7 +61,7 @@ function Project(props) {
       name: "Work Day Scheduler",
       type: "Boostrap/JavaScript/jQuery",
       description: "A simple calendar app for scheduling your work day",
-      image: image_5,
+      image: image_2,
       appLink: "https://bdoneq7.github.io/work-day-scheduler/",
       gitLogo: gitLogo,
       gitRepo: "https://github.com/bdoneq7/work-day-scheduler/tree/main",

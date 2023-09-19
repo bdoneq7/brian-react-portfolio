@@ -1,5 +1,5 @@
 import React from 'react';
-import brian from "../../assets/images/brian.png";
+import brian from "../../assets/images/brian-small.png";
 
 function About(props) {
   return (
